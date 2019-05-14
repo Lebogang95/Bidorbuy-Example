@@ -36,7 +36,7 @@ public class SplashScreenActivity extends AppCompatActivity {
         super.onStart();
         animationUtil.playAnimation(animationView,"loading_animation.json");
         sharedPreferencesHelper.initialisePrefs(getApplicationContext());
-        navigateToHome();
+        startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
 
     @Override
@@ -54,21 +54,6 @@ public class SplashScreenActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-    }
-
-
-    /**
-     * This method doesn't really serve a purpose other than to showcase the loading animation. I do realise it's bad business practice to keep
-     * users waiting unnecessarily but this is for demonstration purposes
-     */
-    private void navigateToHome() {
-        new Timer().schedule(new TimerTask() {
-            @Override
-            public void run() {
-                startActivity(new Intent(getApplicationContext(), MainActivity.class));
-                finish();
-            }
-        }, 2000);
     }
 
 }

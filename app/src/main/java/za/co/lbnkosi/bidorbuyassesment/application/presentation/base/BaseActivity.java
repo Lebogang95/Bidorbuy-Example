@@ -88,6 +88,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Base {
                 adapter.addList(arrayList);
                 totalResultsTextView.setText("Total Results:" +totalResults);
             }
+
             @Override
             public void onFailed(String error) {
                 Toast.makeText(getApplicationContext(), error,
@@ -98,6 +99,7 @@ public abstract class BaseActivity extends AppCompatActivity implements Base {
             public boolean checkInternet() {
                 return networkHelper.isThereInternetConnection();
             }
+
         }, getApplicationContext(),Constants.AUTH_ID, Constants.PLATFORM, Constants.CID, resultsPerPage, includedKeywords,condition, tradeType, orderBy);
         recyclerViewClick(view);
     }

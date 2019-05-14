@@ -14,16 +14,16 @@ import za.co.lbnkosi.bidorbuyassesment.domain.model.ResponseModel;
 
 public interface Api {
 
-    @GET("tradesearch")
+    @GET(Constants.GET)
     Observable<Response<ResponseModel>>
     getList(@Header(Constants.HEADER_AUTH_ID) String AUTH_ID,
             @Header(Constants.HEADER_PLATFORM) int PLATFORM,
             @Header(Constants.HEADER_CID) String CID,
-            @Query("resultsPerPage") int resultsPerPage,
-            @Query("IncludedKeywords") String includedKeywords,
-            @Query("Condition") String condition,
-            @Query("TradeType") String tradeType,
-            @Query("OrderBy") String orderBy
+            @Query(Constants.RESULTS_PER_PAGE) int resultsPerPage,
+            @Query(Constants.INCLUDED_KEYWORDS) String includedKeywords,
+            @Query(Constants.CONDITION) String condition,
+            @Query(Constants.TRADE_TYPE) String tradeType,
+            @Query(Constants.ORDER_BY) String orderBy
     );
 
 }

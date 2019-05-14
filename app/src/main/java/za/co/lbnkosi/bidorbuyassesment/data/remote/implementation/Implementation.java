@@ -1,14 +1,10 @@
 package za.co.lbnkosi.bidorbuyassesment.data.remote.implementation;
 
 import android.content.Context;
-
 import java.util.ArrayList;
-
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
-import retrofit2.HttpException;
-import retrofit2.Response;
 import za.co.lbnkosi.bidorbuyassesment.application.presentation.ViewPresenter;
 import za.co.lbnkosi.bidorbuyassesment.data.remote.network.ApiClient;
 import za.co.lbnkosi.bidorbuyassesment.domain.model.TradeModel;
@@ -58,14 +54,6 @@ public class Implementation implements ViewPresenter.MainPresenter {
                         }
                     }, error -> {
                         mainView.hideProgressBar();
-                        if (error instanceof HttpException) {
-                            Response response = ((HttpException) error).response();
-                            switch (response.code()) {
-
-                            }
-                        } else  {
-
-                        }
                         mainView.onFailed(error.toString());
                     });
         } else {
@@ -80,5 +68,6 @@ public class Implementation implements ViewPresenter.MainPresenter {
             disposable.dispose();
         }
     }
+
 
 }
