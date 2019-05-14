@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:background="@android:color/white"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/listImageView"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:contentDescription="@string/content_description"
+            android:src="@drawable/logo"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/text_alias"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:text="Lebogang Nkosi"/>
+
+            <TextView
+                android:id="@+id/text_title"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:textAllCaps="true"
+                android:text="Playstation 4" />
+
+            <TextView
+                android:id="@+id/text_location"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="10sp"
+                android:textColor="@android:color/black"
+                android:textAllCaps="true"
+                android:text="South Africa"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/text_price"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:textAllCaps="true"
+                android:text="R126.00"/>
+
+            <TextView
+                android:id="@+id/text_buy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buy"
+                android:layout_marginTop="1dp"
+                android:textColor="@android:color/holo_green_light"/>
+
+            <TextView
+                android:id="@+id/text_breadCrumb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gemstones and Rocks/Diamonds"
+                android:textSize="12sp"
+                android:layout_marginTop="8dp"
+                android:textColor="@android:color/darker_gray"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
