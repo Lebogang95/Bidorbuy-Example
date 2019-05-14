@@ -6,6 +6,8 @@ This is a shopping based application which uses the Bidorbuy API to display item
   <img src="https://github.com/Lebogang95/Bidorbuy-Example/blob/master/app/src/main/res/drawable/1.jpg" width="210" height="400" />
   <img src="https://github.com/Lebogang95/Bidorbuy-Example/blob/master/app/src/main/res/drawable/2.jpg" width="210" height="400" />
   <img src="https://github.com/Lebogang95/Bidorbuy-Example/blob/master/app/src/main/res/drawable/3.jpg" width="210" height="400" />
+  <img src="https://github.com/Lebogang95/Bidorbuy-Example/blob/master/app/src/main/res/drawable/4.jpg" width="210" height="400" />
+  <img src="https://github.com/Lebogang95/Bidorbuy-Example/blob/master/app/src/main/res/drawable/5.jpg" width="210" height="400" />
 </p>
 
 ## Setup Guidlines
