@@ -13,4 +13,6 @@ This is a shopping based application which uses the Bidorbuy API to display item
 ## Setup Guidlines
 ### Android
 
-No setup is required for the Android project. Just download the apk using the link below and install on your Android device. The minimum Android version supported is Jelly Bean (4.1).
+In order to get the app running you need to request the mock API information from Bidorbuy. I do not have the authority to release that information to the public.
+
+### Download APK
