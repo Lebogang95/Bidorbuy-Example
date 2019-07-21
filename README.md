@@ -1,5 +1,5 @@
 # Android - Bidorbuy Example App
-
+## WON'T COMPILE - STILL BEING REFACTORED - TO PLAY WITH THE APP PLEASE DOWNLOAD THE APK BELOW
 This is a shopping based application which uses the Bidorbuy API to display items. The app is built using Java. It's is built on the MVP principles to keep the code clean such as MVP to separate business and persistence logic from the views. I also used RxJava, Retrofit, Dagger for dependency injection, Butter Knife for view binding as well as the SOLID principles.
 
 <p float="left">
