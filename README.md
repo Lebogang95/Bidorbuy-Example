@@ -13,6 +13,7 @@ This is a shopping based application which uses the Bidorbuy API to display item
 ## Setup Guidlines
 ### Android
 
-In order to get the app running you need to request the mock API information from Bidorbuy. I do not have the authority to release that information to the public.
+WON'T COMPILE - STILL BEING REFACTORED - TO PLAY WITH THE APP PLEASE DOWNLOAD THE APK BELOW
 
 ### Download APK
+<a href="https://github.com/Lebogang95/Bidorbuy-Example/raw/master/app-debug.apk">Download APK</a>
