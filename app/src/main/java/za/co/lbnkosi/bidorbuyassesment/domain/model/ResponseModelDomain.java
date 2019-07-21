@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * Created by Lebogang Nkosi on 26/04/2019.
  */
 
-public class ResponseModel {
+public class ResponseModelDomain {
 
     @SerializedName("totalResults")
     private String totalResults;
@@ -21,10 +21,6 @@ public class ResponseModel {
     @SerializedName("trade")
     private ArrayList<TradeModel> trade;
 
-
-    public ResponseModel(ArrayList<TradeModel> trade) {
-
-    }
 
     public String getTotalResults() {
         return totalResults;

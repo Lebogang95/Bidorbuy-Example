@@ -20,7 +20,7 @@ public class Implementation implements ViewPresenter.MainPresenter {
 
 
     /***
-     * Returns an Observable<Response<ResponseModel>>
+     * Returns an Observable<Response<ResponseModelDomain>>
      * We then get the results of that object model and assign the value to _arrayList
      * We then use the callback to populate the Recyclerview
      */

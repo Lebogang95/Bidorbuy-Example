@@ -1,21 +1,16 @@
-package za.co.lbnkosi.bidorbuyassesment.data.remote.network;
+package za.co.lbnkosi.bidorbuyassesment.data.bobNetworking;
 
 import io.reactivex.Observable;
 import retrofit2.Response;
 import retrofit2.http.GET;
 import retrofit2.http.Header;
 import retrofit2.http.Query;
-import za.co.lbnkosi.bidorbuyassesment.application.presentation.views.home.Constants;
-import za.co.lbnkosi.bidorbuyassesment.domain.model.ResponseModelDomain;
+import za.co.lbnkosi.bidorbuyassesment.data.entity.BobEntities.ResponseModelData;
 
-/**
- * Created by Lebogang Nkosi on 26/04/2019.
- */
-
-public interface Api {
+public interface BobService {
 
     @GET(Constants.GET)
-    Observable<Response<ResponseModelDomain>>
+    Observable<Response<ResponseModelData>>
     getList(@Header(Constants.HEADER_AUTH_ID) String AUTH_ID,
             @Header(Constants.HEADER_PLATFORM) int PLATFORM,
             @Header(Constants.HEADER_CID) String CID,

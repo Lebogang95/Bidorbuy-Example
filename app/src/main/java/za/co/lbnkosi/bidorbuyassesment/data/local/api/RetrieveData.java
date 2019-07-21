@@ -5,7 +5,7 @@ import android.content.SharedPreferences;
 import com.google.gson.Gson;
 import java.util.Objects;
 import za.co.lbnkosi.bidorbuyassesment.application.presentation.views.home.Constants;
-import za.co.lbnkosi.bidorbuyassesment.domain.model.ResponseModel;
+import za.co.lbnkosi.bidorbuyassesment.domain.model.ResponseModelDomain;
 
 /**
  * Created by Lebogang Nkosi on 28/04/2019.
@@ -13,7 +13,7 @@ import za.co.lbnkosi.bidorbuyassesment.domain.model.ResponseModel;
 
 public class RetrieveData {
 
-    public static ResponseModel getResponse(Context mContext){
+    public static ResponseModelDomain getResponse(Context mContext){
         synchronized (mContext.getApplicationContext()) {
             SharedPreferences mPrefs = mContext.getSharedPreferences(Constants.SHARED_PREF_NAME,Context.MODE_PRIVATE);
             Gson gson = new Gson();
@@ -21,7 +21,7 @@ public class RetrieveData {
             if(Objects.requireNonNull(json).equalsIgnoreCase("")){
                 return null;
             }
-            return gson.fromJson(json, ResponseModel.class);
+            return gson.fromJson(json, ResponseModelDomain.class);
         }
     }
 
